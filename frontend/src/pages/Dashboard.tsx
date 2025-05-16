@@ -28,8 +28,8 @@ export default function Dashboard() {
 
   useEffect(() => {
     fetchDevices();
-    // Set up polling every 30 seconds
-    const interval = setInterval(fetchDevices, 30000);
+    // Set up polling every 300 seconds
+    const interval = setInterval(fetchDevices, 300000);
     return () => clearInterval(interval);
   }, []);
 

@@ -24,7 +24,7 @@ export default function Login({ onLoginSuccess }: LoginProps) {
     e.preventDefault();
     setError("");
     try {
-      const response = await api.post("/login/", formData);
+      const response = await api.post("/account/login/", formData);
       if (response.data.message === "Login successful") {
         onLoginSuccess();
         navigate("/dashboard");
@@ -68,7 +68,7 @@ export default function Login({ onLoginSuccess }: LoginProps) {
                   name="username"
                   type="text"
                   required
-                  className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm"
+                  className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder:text-gray-700 focus:placeholder:text-gray-300 transition duration-500 ease-in-out focus:outline-none focus:ring-primary focus:border-primary sm:text-sm"
                   onChange={handleChange}
                 />
               </div>
@@ -87,7 +87,7 @@ export default function Login({ onLoginSuccess }: LoginProps) {
                   name="password"
                   type="password"
                   required
-                  className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm"
+                  className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder:text-gray-700 focus:placeholder:text-gray-300 transition duration-500 ease-in-out focus:outline-none focus:ring-primary focus:border-primary sm:text-sm"
                   onChange={handleChange}
                 />
               </div>
