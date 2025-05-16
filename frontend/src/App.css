@@ -1,0 +1,8 @@
+.image {
+    background-image: url('https://images.stockcake.com/public/5/9/5/59597cf8-10ad-49e0-9783-6e42e191e158/complex-network-visualization-stockcake.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
