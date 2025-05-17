@@ -46,6 +46,7 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = env('DEBUG')
 
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['localhost', '127.0.0.1'])
+PORT = env.int('PORT', default=8000)
 
 # Security settings
 SECURE_SSL_REDIRECT = env.bool('SECURE_SSL_REDIRECT', default=False)
